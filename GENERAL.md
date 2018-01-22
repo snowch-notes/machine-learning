@@ -2,23 +2,25 @@
 
 - missing data imputation: http://www.stat.columbia.edu/~gelman/arm/missing.pdf
 
-# L1 and L2 regularization
 
-- L1 regularization helps perform feature selection in sparse feature spaces, and that is a good practical reason to use L1 in some situations.
-- As a rule-of-thumb, you should always go for L2 in practice.
-- Even in the case when you have a strong reason to use L1 given the number of features, I would recommend going for Elastic Nets instead. Granted this will only be a practical option if you are doing linear/logistic regression. But, in that case, Elastic Nets have proved to be (in theory and in practice) better than L1/Lasso. Elastic Nets combine L1 and L2 regularization at the "only" cost of introducing another hyperparameter to tune.
-
-Source: https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when
 
 # ML Algorithms
+
+## Terminology
+
+ - **Convex function** There are many ways to rigorously define a convex function, but in loose terms it looks like the fabric of a trampoline being weighed down by a person standing on it. It means that a local minimum is also a global minimum, and the gradient at each point is pointing towards this minimum. You can get to the minimum by stepping along in the direction of these gradients, a technique called gradient descent. This is what you do to minimize your loss with respect to the parameters in your model. But you can’t do this with 0–1 loss because at each corner there is no gradient, and the dropoff from 0 to 1 has infinite slope. *Source:* https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function
+ - **L1 and L2 regularization** ([source](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when))
+    -  L1 regularization helps perform feature selection in sparse feature spaces, and that is a good practical reason to use L1 in some situations.
+    - As a rule-of-thumb, you should always go for L2 in practice.
+    - Even in the case when you have a strong reason to use L1 given the number of features, I would recommend going for Elastic Nets instead. Granted this will only be a practical option if you are doing linear/logistic regression. But, in that case, Elastic Nets have proved to be (in theory and in practice) better than L1/Lasso. Elastic Nets combine L1 and L2 regularization at the "only" cost of introducing another hyperparameter to tune.
 
 ## Regression
 
 ### Linear
 
  - **Loss Function** 
-   - zero-one https://stats.stackexchange.com/questions/284028/0-1-loss-function-explanation - not used because it isn't convex and isn't differentiable https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function
-   - logistic (logistic regression), hinge (support vector machine). diagram: http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html
+   - zero-one - not used because it isn't convex (see above) and isn't differentiable ([Source 1](https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function), [Source 2](https://stats.stackexchange.com/questions/284028/0-1-loss-function-explanation))
+   - logistic (logistic regression), hinge (support vector machine). Diagram: http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html
 
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
 
