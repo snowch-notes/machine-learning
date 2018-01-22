@@ -16,7 +16,7 @@ Source: https://www.quora.com/What-is-the-difference-between-L1-and-L2-regulariz
 
 ### Linear
 
-- **Loss Function** logistic (logistic regression), hinge (support vector machine). [http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html](http://scikit-learn.org/stable/_images/sphx_glr_plot_sgd_loss_functions_001.png)
+- **Loss Function** logistic (logistic regression), hinge (support vector machine). diagram: http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html
 
 - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
 
