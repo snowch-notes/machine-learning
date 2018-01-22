@@ -17,7 +17,7 @@ Source: https://www.quora.com/What-is-the-difference-between-L1-and-L2-regulariz
 ### Linear
 
  - **Loss Function** 
-   - zero-one https://stats.stackexchange.com/questions/284028/0-1-loss-function-explanation
+   - zero-one https://stats.stackexchange.com/questions/284028/0-1-loss-function-explanation - not used because it isn't convex and isn't differentiable https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function
    - logistic (logistic regression), hinge (support vector machine). diagram: http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html
 
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
