@@ -24,6 +24,14 @@ data.isnull().sum()  # Count num rows with missing values for each column
 data.isnull().mean() # Percent of rows with missing values for each column
 ```
 
+Survivors could provide their age and cabin, but non-survivors couldn't.
+
+```
+data['cabin_null'] = ...
+data.groupBy(['Survived'])['cabin_null'].mean()
+```
+
+
 ## Missing data imputation
 
 - http://www.stat.columbia.edu/~gelman/arm/missing.pdf
