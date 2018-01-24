@@ -24,7 +24,7 @@ data.isnull().sum()  # Count num rows with missing values for each column
 data.isnull().mean() # Percent of rows with missing values for each column
 ```
 
-Survivors could provide their age and cabin, but non-survivors couldn't.
+Survivors could provide their age and cabin, but non-survivors couldn't (note that this view is simplified - people having a cabin could also have a lower survival rate for other reasons).
 
 ```
 data['cabin_null'] = ...
