@@ -28,7 +28,7 @@ Survivors could provide their age and cabin, but non-survivors couldn't (note th
 
 ```
 data['cabin_null'] = ...
-data.groupBy(['Survived'])['cabin_null'].mean()
+data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whether or not they had a cabin.
 ```
 
 
