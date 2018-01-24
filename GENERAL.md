@@ -1,6 +1,24 @@
 # Feature Engineering
 
-- missing data imputation: http://www.stat.columbia.edu/~gelman/arm/missing.pdf
+## Missing data
+
+### Missing completely at random
+
+- no relationship between missing data and other values
+
+### Missing at random
+
+- some systematic relationship, e.g. women disclosing their weight
+
+### Missing not at random
+
+- systematic relationship to missing values, e.g. depressed people not filling in a survey
+
+## Examples
+
+- Titanic: 
+
+## Missing data imputation: http://www.stat.columbia.edu/~gelman/arm/missing.pdf
 
 
 
