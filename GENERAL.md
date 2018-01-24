@@ -18,7 +18,15 @@
 
 - Titanic: 
 
-## Missing data imputation: http://www.stat.columbia.edu/~gelman/arm/missing.pdf
+```
+data = read.csv ...
+data.isnull().sum()  # Count num rows with missing values for each column
+data.isnull().mean() # Percent of rows with missing values for each column
+```
+
+## Missing data imputation
+
+- http://www.stat.columbia.edu/~gelman/arm/missing.pdf
 
 
 
