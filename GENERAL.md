@@ -2,17 +2,11 @@
 
 ## Missing data
 
-### Missing completely at random
+- **Missing completely at random** - no relationship between missing data and other values
+- **Missing at random** - some systematic relationship, e.g. women disclosing their weight
+- **Missing not at random** - systematic relationship to missing values, e.g. depressed people not filling in a survey
 
-- no relationship between missing data and other values
-
-### Missing at random
-
-- some systematic relationship, e.g. women disclosing their weight
-
-### Missing not at random
-
-- systematic relationship to missing values, e.g. depressed people not filling in a survey
+One objective is to determine the type of missingness so that appropriate strategies can be put in place to deal with it.
 
 ## Examples
 
