@@ -42,6 +42,8 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
 
 ## Terminology
 
+ - **Accuracy** Error rate
+ - **Precision and Recall** https://en.wikipedia.org/wiki/Precision_and_recall, http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
  - **Convex function** There are many ways to rigorously define a convex function, but in loose terms it looks like the fabric of a trampoline being weighed down by a person standing on it. It means that a local minimum (see below) is also a global minimum, and the gradient at each point is pointing towards this minimum. You can get to the minimum by stepping along in the direction of these gradients, a technique called gradient descent. This is what you do to minimize your loss with respect to the parameters in your model. But you can’t do this with 0–1 loss because at each corner there is no gradient, and the dropoff from 0 to 1 has infinite slope. ([Source](https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function))
  - **Local minimum** is a minimum relative to its immediately surrounding points, but it is not necessarily the **Global minimum**, which is the minimum of the entire function ([Source](https://frnsys.com/ai_notes/foundations/optimization.html)]
  - **L1 and L2 regularization** ([Source](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when))
@@ -49,6 +51,27 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
     - As a rule-of-thumb, you should always go for L2 in practice.
     - Even in the case when you have a strong reason to use L1 given the number of features, I would recommend going for Elastic Nets instead. Granted this will only be a practical option if you are doing linear/logistic regression. But, in that case, Elastic Nets have proved to be (in theory and in practice) better than L1/Lasso. Elastic Nets combine L1 and L2 regularization at the "only" cost of introducing another hyperparameter to tune.
  - **Link function** The link function provides the **relationship** between the **linear predictor** and the **mean of the distribution function**. There are many commonly used link functions, and their choice is informed by several considerations. ([Source](https://en.wikipedia.org/wiki/Generalized_linear_model#Link_function))
+ 
+## Classification
+
+```
+from sklearn.datasets import load_iris
+iris_dataset = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(
+        iris_dataset['data'], iris_dataset['target'], random_state=0)
+
+knn = KNeighborsClassifier(n_neighbors=1)
+knn.fit(X_train, y_train)
+print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
+
+> Test set score: 0.97
+```
+
+[KNeighborsClassifier.score](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier.score):
+
+> Returns the mean accuracy on the given test data and labels.
+>
+> In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.
  
 ## Regression
 
@@ -62,4 +85,6 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
 
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
 
+## SciKit Learn - Model Evaluation
 
+http://scikit-learn.org/stable/modules/model_evaluation.html
