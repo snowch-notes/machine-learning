@@ -87,4 +87,5 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 ## SciKit Learn - Model Evaluation
 
-http://scikit-learn.org/stable/modules/model_evaluation.html
+- http://scikit-learn.org/stable/modules/model_evaluation.html
+- http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
