@@ -48,6 +48,8 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
  
 ## Classification
 
+### KNN
+
 ```
 from sklearn.datasets import load_iris
 iris_dataset = load_iris()
@@ -67,6 +69,10 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 >
 > In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.
  
+### Logistic Regression
+
+https://beckernick.github.io/logistic-regression-from-scratch/
+ 
 ## Regression
 
 ### Linear
@@ -78,8 +84,16 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
    - logistic (logistic regression), hinge (support vector machine). Diagram: http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html
 
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
+ 
+
 
 ## SciKit Learn - Model Evaluation
 
 - http://scikit-learn.org/stable/modules/model_evaluation.html
 - http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
+
+
+# Deep Learning
+
+http://neuralnetworksanddeeplearning.com/index.html
+https://beckernick.github.io/neural-network-scratch/
