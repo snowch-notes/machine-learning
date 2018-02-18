@@ -84,6 +84,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
  
 ### Logistic Regression
 
+http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
 https://beckernick.github.io/logistic-regression-from-scratch/
  
 ## Regression
