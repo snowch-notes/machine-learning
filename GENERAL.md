@@ -98,10 +98,12 @@ https://beckernick.github.io/logistic-regression-from-scratch/
 
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
  
-# Testing
+# Testing (TDD ML)
 
  -  Technical 
-    - Linear Regression: [R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
+    - Linear Regression: 
+       - (adjusted)[R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
+       - model assumptions - usually visual inspection for patterns (difficult to test)
     - Classification: 
        - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
           - Area under curve (AUC)
