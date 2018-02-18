@@ -1,3 +1,14 @@
+# ML Process
+
+- Orthogonalization.  Steps:
+
+  1. Fit training set well on cost function? No - try bigger network, etc
+  2. Fit dev set well on cost function? No -  regularization, etc
+  3. Fit test set well on cost function? No - bigger dev set
+  4. Perform well in the real world? No - change dev se or cost function
+  
+  Source: https://www.coursera.org/learn/machine-learning-projects/lecture/FRvQe/orthogonalization
+
 # Feature Engineering
 
 ## Missing data
