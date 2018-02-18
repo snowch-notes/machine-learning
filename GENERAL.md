@@ -109,7 +109,7 @@ https://beckernick.github.io/logistic-regression-from-scratch/
        - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
           - Area under curve (AUC)
           - Location of inflection point
-          - % of data correctly classifie
+          - % of data correctly classified
        - [Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
        - Typically use cross-validation
     - Clustering
