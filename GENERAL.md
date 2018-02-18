@@ -109,5 +109,5 @@ https://beckernick.github.io/logistic-regression-from-scratch/
 
 # Deep Learning
 
-http://neuralnetworksanddeeplearning.com/index.html
-https://beckernick.github.io/neural-network-scratch/
+- http://neuralnetworksanddeeplearning.com/index.html
+- https://beckernick.github.io/neural-network-scratch/
