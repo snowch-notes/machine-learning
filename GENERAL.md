@@ -100,7 +100,7 @@ https://beckernick.github.io/logistic-regression-from-scratch/
 
 -  Technical 
   - Linear Regression: R2
-  - Classification: ROC curve/Confusion matrix
+  - Classification: [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)/[Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
 - Other
   - Profitability
   - Risk
