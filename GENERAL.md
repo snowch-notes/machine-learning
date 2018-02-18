@@ -107,6 +107,7 @@ https://beckernick.github.io/logistic-regression-from-scratch/
           - Location of inflection point
           - % of data correctly classified
        - [Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
+       - Typically use cross-validation
  - Other
     - Profitability
     - Risk
