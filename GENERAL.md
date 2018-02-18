@@ -99,14 +99,14 @@ https://beckernick.github.io/logistic-regression-from-scratch/
 # Testing
 
  -  Technical 
-   - Linear Regression: [R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
-   - Classification: [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)/[Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
+    - Linear Regression: [R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
+    - Classification: [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)/[Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
  - Other
-   - Profitability
-   - Risk
+    - Profitability
+    - Risk
  - Random baseline
 
-## SciKit Learn - Model Evaluation
+## SciKit Learn - Model Evaluati
 
 - http://scikit-learn.org/stable/modules/model_evaluation.html
 - http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
