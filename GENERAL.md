@@ -110,7 +110,7 @@ https://beckernick.github.io/logistic-regression-from-scratch/
           - Area under curve (AUC) [scikit learn example](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
           - Location of inflection point
           - % of data correctly classified
-          - can you plot +/- revenue, whatever-y value vs false negatives/positives?
+          - can you plot +/- revenue or whatever-y value vs false negatives/positives?
        - [Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
        - Typically use cross-validation
     - Clustering
