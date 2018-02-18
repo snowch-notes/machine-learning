@@ -104,13 +104,16 @@ https://beckernick.github.io/logistic-regression-from-scratch/
     - Linear Regression: 
        - (adjusted)[R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
        - model assumptions - usually visual inspection for patterns (difficult to test)
+          - cross validation and loads of tests?
     - Classification: 
        - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
           - Area under curve (AUC)
           - Location of inflection point
-          - % of data correctly classified
+          - % of data correctly classifie
        - [Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
        - Typically use cross-validation
+    - Clustering
+       - cross validation?
  - Other
     - Profitability
     - Risk
