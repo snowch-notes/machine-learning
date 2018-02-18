@@ -106,7 +106,7 @@ https://beckernick.github.io/logistic-regression-from-scratch/
     - Risk
  - Random baseline
 
-## SciKit Learn - Model Evaluati
+## SciKit Learn - Model Evaluation
 
 - http://scikit-learn.org/stable/modules/model_evaluation.html
 - http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
