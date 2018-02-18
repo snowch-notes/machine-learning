@@ -96,7 +96,10 @@ https://beckernick.github.io/logistic-regression-from-scratch/
 
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
  
+# Testing
 
+- Linear Regression: R2
+- Classification: ROC curve/Confusion matrix
 
 ## SciKit Learn - Model Evaluation
 
