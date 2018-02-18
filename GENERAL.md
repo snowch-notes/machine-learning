@@ -107,7 +107,7 @@ https://beckernick.github.io/logistic-regression-from-scratch/
           - cross validation and loads of tests?
     - Classification: 
        - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
-          - Area under curve (AUC)
+          - Area under curve (AUC) [scikit learn example](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
           - Location of inflection point
           - % of data correctly classified
        - [Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
