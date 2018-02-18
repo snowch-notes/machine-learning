@@ -98,8 +98,15 @@ https://beckernick.github.io/logistic-regression-from-scratch/
  
 # Testing
 
+## Technical 
+
 - Linear Regression: R2
 - Classification: ROC curve/Confusion matrix
+
+## Other
+
+- Profitability
+- Risk
 
 ## SciKit Learn - Model Evaluation
 
