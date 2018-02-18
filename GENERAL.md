@@ -47,6 +47,7 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
 
 ## Terminology
 
+ - **[Cross Validation](https://en.m.wikipedia.org/wiki/Cross-validation_(statistics))** In the basic approach, called k-fold CV, the training set is split into k smaller sets (other approaches can be used, but generally follow the same principles). 
  - **Accuracy** Error rate
  - **Precision and Recall** https://en.wikipedia.org/wiki/Precision_and_recall, http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
  - **Convex function** There are many ways to rigorously define a convex function, but in loose terms it looks like the fabric of a trampoline being weighed down by a person standing on it. It means that a local minimum (see below) is also a global minimum, and the gradient at each point is pointing towards this minimum. You can get to the minimum by stepping along in the direction of these gradients, a technique called gradient descent. This is what you do to minimize your loss with respect to the parameters in your model. But you can’t do this with 0–1 loss because at each corner there is no gradient, and the dropoff from 0 to 1 has infinite slope. ([Source](https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function))
