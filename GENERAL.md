@@ -69,6 +69,8 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
     - Even in the case when you have a strong reason to use L1 given the number of features, I would recommend going for Elastic Nets instead. Granted this will only be a practical option if you are doing linear/logistic regression. But, in that case, Elastic Nets have proved to be (in theory and in practice) better than L1/Lasso. Elastic Nets combine L1 and L2 regularization at the "only" cost of introducing another hyperparameter to tune.
  - **Link function** The link function provides the **relationship** between the **linear predictor** and the **mean of the distribution function**. There are many commonly used link functions, and their choice is informed by several considerations. ([Source](https://en.wikipedia.org/wiki/Generalized_linear_model#Link_function))
  - **Adjusted R<sup>2</sup>** R<sup>2</sup> adjusted for the number of predictors [blog](http://blog.minitab.com/blog/adventures-in-statistics-2/multiple-regession-analysis-use-adjusted-r-squared-and-predicted-r-squared-to-include-the-correct-number-of-variables)
+ - **Surface 3D plot** plot of the cost function [[Example]](https://matplotlib.org/examples/mplot3d/surface3d_demo.html)
+ - **Contour plot** A contour plot is a graphical technique for representing a 3-dimensional surface by plotting constant z slices, called contours, on a 2-dimensional format. That is, given a value for z, lines are drawn for connecting the (x,y) coordinates where that z value occurs. The contour plot is an alternative to a 3-D surface plot. [[Source]](http://www.itl.nist.gov/div898/handbook/eda/section3/contour.htm) [[Example]](https://matplotlib.org/examples/pylab_examples/contour_demo.html)
  
 
 ## Loss Function
