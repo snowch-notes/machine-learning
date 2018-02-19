@@ -79,6 +79,22 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
       - not used because it isn't convex (see [above](https://github.com/snowch-notes/machine-learning/blob/master/GENERAL.md#terminology)) and isn't differentiable ([Source](https://www.quora.com/Why-is-the-0-1-indicator-function-a-poor-choice-for-loss-function))
    - logistic (logistic regression), hinge (support vector machine). Diagram: http://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_loss_functions.html
    
+## Gradient Descent
+
+The gradient descent algorithm is:
+
+repeat until convergence:
+
+θ<sub>j</sub> := θ<sub>j</sub> − α ∂/(∂θ<sub>j</sub>) x J(θ<sub>0</sub>,θ<sub>1</sub>)
+where
+
+j=0,1 represents the feature index number.
+
+At each iteration j, one should simultaneously update the parameters θ1,θ2,...,θn. Updating a specific parameter prior to calculating another one on the j(th) iteration would yield to a wrong implementation.
+
+
+Source: https://www.coursera.org/learn/machine-learning/supplement/2GnUg/gradient-descent
+   
 ## Classification
 
 ### KNN
