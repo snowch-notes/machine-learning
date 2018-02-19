@@ -56,11 +56,11 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
     - https://en.m.wikipedia.org/wiki/Maxima_and_minima
     - https://en.m.wikipedia.org/wiki/Mathematical_optimization
     - http://www.mash.dept.shef.ac.uk/Resources/c6_minma.pdf
+ - **Cost Function** https://en.m.wikipedia.org/wiki/Cost_function
  - **L1 and L2 regularization** ([Source](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when))
     -  L1 regularization helps perform feature selection in sparse feature spaces, and that is a good practical reason to use L1 in some situations.
     - As a rule-of-thumb, you should always go for L2 in practice.
     - Even in the case when you have a strong reason to use L1 given the number of features, I would recommend going for Elastic Nets instead. Granted this will only be a practical option if you are doing linear/logistic regression. But, in that case, Elastic Nets have proved to be (in theory and in practice) better than L1/Lasso. Elastic Nets combine L1 and L2 regularization at the "only" cost of introducing another hyperparameter to tune.
- - **Cost Function** https://en.m.wikipedia.org/wiki/Cost_function
  - **Link function** The link function provides the **relationship** between the **linear predictor** and the **mean of the distribution function**. There are many commonly used link functions, and their choice is informed by several considerations. ([Source](https://en.wikipedia.org/wiki/Generalized_linear_model#Link_function))
  - **Adjusted R<sup>2</sup>** R<sup>2</sup> adjusted for the number of predictors [blog](http://blog.minitab.com/blog/adventures-in-statistics-2/multiple-regession-analysis-use-adjusted-r-squared-and-predicted-r-squared-to-include-the-correct-number-of-variables)
  
