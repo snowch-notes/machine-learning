@@ -56,8 +56,13 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
     - https://en.m.wikipedia.org/wiki/Maxima_and_minima
     - https://en.m.wikipedia.org/wiki/Mathematical_optimization
     - http://www.mash.dept.shef.ac.uk/Resources/c6_minma.pdf
- - **Cost Function** https://en.m.wikipedia.org/wiki/Cost_function
- - **L1 and L2 regularization** ([Source](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when))
+ - **Cost/Loss/Error Function** is a function that maps an event or values of one or more variables onto a real number intuitively representing some "cost" associated with the event. An optimization problem seeks to minimize a loss function.
+    - e.g. mean squared for linear regression
+    - https://en.m.wikipedia.org/wiki/Cost_function
+    - https://en.m.wikipedia.org/wiki/Loss_function
+    - Linear - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#cost-function
+ - **Objective Function** 
+ - **L1 and L2 regularization** ([Souris either a loss function or its negative (in specific domains, variously called a reward function, a profit function, a utility function, a fitness function, etc.), in which case it is to be maximized.ce](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when))
     -  L1 regularization helps perform feature selection in sparse feature spaces, and that is a good practical reason to use L1 in some situations.
     - As a rule-of-thumb, you should always go for L2 in practice.
     - Even in the case when you have a strong reason to use L1 given the number of features, I would recommend going for Elastic Nets instead. Granted this will only be a practical option if you are doing linear/logistic regression. But, in that case, Elastic Nets have proved to be (in theory and in practice) better than L1/Lasso. Elastic Nets combine L1 and L2 regularization at the "only" cost of introducing another hyperparameter to tune.
@@ -95,6 +100,8 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 ## Regression
 
 ### Linear
+
+ - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
 
  - **Loss Function** 
    - **zero-one (0-1)**
