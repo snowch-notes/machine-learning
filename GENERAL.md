@@ -83,6 +83,7 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
 
 - http://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
 - https://www.coursera.org/learn/machine-learning/supplement/2GnUg/gradient-descent
+- [Code Example](./GradientDescentExample.ipynb)
    
 ## Classification
 
