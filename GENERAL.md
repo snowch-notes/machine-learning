@@ -81,19 +81,8 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
    
 ## Gradient Descent
 
-The gradient descent algorithm is:
-
-repeat until convergence:
-
-θ<sub>j</sub> := θ<sub>j</sub> − α ∂/(∂θ<sub>j</sub>) x J(θ<sub>0</sub>,θ<sub>1</sub>)
-where
-
-j=0,1 represents the feature index number.
-
-At each iteration j, one should simultaneously update the parameters θ1,θ2,...,θn. Updating a specific parameter prior to calculating another one on the j(th) iteration would yield to a wrong implementation.
-
-
-Source: https://www.coursera.org/learn/machine-learning/supplement/2GnUg/gradient-descent
+- http://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
+- https://www.coursera.org/learn/machine-learning/supplement/2GnUg/gradient-descent
    
 ## Classification
 
