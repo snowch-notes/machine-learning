@@ -129,7 +129,12 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
  - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
- 
+
+
+## Time series
+
+ - https://www.safaribooksonline.com/library/view/machine-learning-for/9781492025504/
+
 # Testing (TDD ML)
 
  -  Technical 
