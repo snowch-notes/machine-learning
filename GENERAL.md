@@ -81,9 +81,11 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
    
 ## Gradient Descent
 
+- **Batch** at each step of the descent, you use all of the training examples to caluate the new values for θ0 and θ1.
 - http://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
 - https://www.coursera.org/learn/machine-learning/supplement/2GnUg/gradient-descent
 - [Code Example](./GradientDescentExample.ipynb) adapted from [GradientDescentExample](https://github.com/mattnedrich/GradientDescentExample)
+
    
 ## Classification
 
