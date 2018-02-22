@@ -72,6 +72,8 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
  - **Surface 3D plot** plot of the cost function [[Example]](https://matplotlib.org/examples/mplot3d/surface3d_demo.html)
  - **Contour plot** A contour plot is a graphical technique for representing a 3-dimensional surface by plotting constant z slices, called contours, on a 2-dimensional format. That is, given a value for z, lines are drawn for connecting the (x,y) coordinates where that z value occurs. The contour plot is an alternative to a 3-D surface plot. [[Source]](http://www.itl.nist.gov/div898/handbook/eda/section3/contour.htm) [[Example]](https://matplotlib.org/examples/pylab_examples/contour_demo.html)
  - **Machine Learning** the machine learns for a better representation of the data (e.g. y=mx+b linear model) through an automatic search process
+ - **Random Forest** are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. Random decision forests correct for decision trees' habit of overfitting to their training set. [[Source]](https://en.wikipedia.org/wiki/Random_forest)
+ - **Gradient Boosting** is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees. [[Source]](https://en.wikipedia.org/wiki/Gradient_boosting)
 
 ## Loss Function
    - **zero-one (0-1)**
@@ -114,7 +116,11 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 - http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
 - https://beckernick.github.io/logistic-regression-from-scratch/
- 
+
+### Kernel Methods (SVM)
+
+
+
 ## Regression
 
 ### Linear
