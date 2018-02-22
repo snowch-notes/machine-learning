@@ -119,6 +119,12 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 ### Kernel Methods (SVM)
 
+### Decision Trees
+
+- with gradient boosting
+  - usually outperforms random forests
+  - may be the best algorithm for non-perceptual data
+  - most common kaggle technique
 
 
 ## Regression
