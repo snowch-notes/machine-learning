@@ -139,6 +139,25 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
  - https://www.safaribooksonline.com/library/view/machine-learning-for/9781492025504/
 
+## Deep Learning
+
+- removes need for feature engineering
+- key area: perceptual problems
+- http://neuralnetworksanddeeplearning.com/index.html
+- https://beckernick.github.io/neural-network-scratch/
+
+
+# Kaggle
+
+- 2016/2017 most common approaches
+  - gradient boosting
+     - when structured data is available
+     - using xgboost
+  - deep learning
+     - for perceptual problems
+     - using keras
+
+
 # Testing (TDD ML)
 
  -  Technical 
@@ -167,7 +186,3 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 - http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
 
 
-# Deep Learning
-
-- http://neuralnetworksanddeeplearning.com/index.html
-- https://beckernick.github.io/neural-network-scratch/
