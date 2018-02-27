@@ -185,6 +185,10 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 # Testing (TDD ML)
 
+ - Learning plots 
+    - Score vs num samples
+       - [Scikit learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html)
+    - Score/Cost vs num iterations
  -  Technical 
     - Linear Regression: 
        - (adjusted)[R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
