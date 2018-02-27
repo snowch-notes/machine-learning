@@ -89,8 +89,12 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
 - [Code Example](./GradientDescentExample.ipynb) adapted from [GradientDescentExample](https://github.com/mattnedrich/GradientDescentExample)
 - Tips (coursera ml andrew ng)
    - Feature scaling to converge quicker
-   - Get into an approx -1 < x < 1 range
-   - Mean normalization (mean approx zero)
+      - Get into an approx -1 < x < 1 range
+      - Mean normalization (mean approx zero)
+   - Debugging
+      - ...
+   - Choosing alpha
+      - ...
    
 ## Classification
 
