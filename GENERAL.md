@@ -142,7 +142,15 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
  - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
  - Can be solved using gradient descent or [normal equations](http://mlwiki.org/index.php/Normal_Equation#Normal_Equation).  Gradient descent [scales better](https://stackoverflow.com/a/18194919/1033422) to larger training sets.
- 
+ - Constructing new features
+    - e.g. from frontage and depth, calculate plot area
+ - Polynomial regression
+    - e.g. quadratic model
+      - feature x1 = size of house
+      - feature x2 = size of house squared
+      - feature scaling very important with squared, etc data
+      
+    
 ## Time series
 
  - https://www.safaribooksonline.com/library/view/machine-learning-for/9781492025504/
