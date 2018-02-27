@@ -150,6 +150,15 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 - removes need for feature engineering
 - key area: perceptual problems
+- loss function
+   - binary classification ...
+      - and output is a probability (network ends with single-unit layer with sigmoid activition)
+         - (keras) binary_crossentropy
+   - ...
+      - ... 
+         - (keras) mean_squared_error
+- optimizer
+   - ...
 - http://neuralnetworksanddeeplearning.com/index.html
 - https://beckernick.github.io/neural-network-scratch/
 
