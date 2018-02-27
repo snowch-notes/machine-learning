@@ -91,10 +91,11 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
    - Feature scaling to converge quicker
       - Get into an approx -1 < x < 1 range
       - Mean normalization (mean approx zero)
-   - Debugging
-      - ...
-   - Choosing alpha
-      - ...
+   - Plot cost vs iterations
+      - to ensure cost decreases on every iteration (try smaller alpha)
+      - to identify if convergence is too slow (try larger alpha)
+      - to identify approximately the number of iterations to converge
+         - e.g. try alpha 0.003, 0.03, 0.3, 1 and pick the next alpha down from a too large alpha
    
 ## Classification
 
