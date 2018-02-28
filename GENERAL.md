@@ -149,7 +149,8 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
       - feature x1 = size of house
       - feature x2 = size of house squared
       - feature scaling very important with squared, etc data
-      
+ - Normal equation
+    - Doesn't need feature scaling
     
 ## Time series
 
