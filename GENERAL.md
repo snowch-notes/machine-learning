@@ -143,15 +143,28 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
  - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
  - Can be solved using gradient descent or [normal equations](http://mlwiki.org/index.php/Normal_Equation#Normal_Equation).  Gradient descent [scales better](https://stackoverflow.com/a/18194919/1033422) to larger training sets.
- - Constructing new features
+ - Constructing new features worth investigating
     - e.g. from frontage and depth, calculate plot area
  - Polynomial regression
     - e.g. quadratic model
       - feature x1 = size of house
       - feature x2 = size of house squared
       - feature scaling very important with squared, etc data
- - Normal equation
+ - Gradient descent [scikitxlearn SGDRegressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html)
+ - Normal equation [scikit-learn LinearRegression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression)
+    - `theta = (X.T * X)^-1 * X.T * y`
     - Doesn't need feature scaling
+    - Don't need to choose 'a' learning rate
+    - Don't need to iterate
+    - Slow if lots of features (e.g. 10^6)
+    - Requires invertibility of `X.T * X`
+       - causes of non-invertibility
+          - redundant features where features are closely related (e.g. x1 = length (feet), x2 = length (metres))
+          - too many features (e.g. m <= n; m=rows, n=num features)
+             - resolution:
+                - delete some features
+                - regularization
+    
     
 ## Time series
 
