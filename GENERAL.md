@@ -123,6 +123,11 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
  
 ### Logistic Regression
 
+- binary
+   - 0 : negative class
+   - 1 : positive class
+   - positive/negative does not mean desirable/undesirable
+- multi-class
 - http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
 - https://beckernick.github.io/logistic-regression-from-scratch/
 
