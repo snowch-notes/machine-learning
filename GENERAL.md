@@ -164,7 +164,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
              - resolution:
                 - delete some features
                 - regularization
-       - octave [pinv](https://www.gnu.org/software/octave/doc/v4.2.1/Basic-Matrix-Functions.html#index-pinv] (pseudoinverse) does the 'right thing' [scikit-learn pinv](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.linalg.pinv.html)
+       - octave [pinv](https://www.gnu.org/software/octave/doc/v4.2.1/Basic-Matrix-Functions.html#index-pinv) (pseudoinverse) does the 'right thing' [scikit-learn pinv](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.linalg.pinv.html)
     
     
 ## Time series
