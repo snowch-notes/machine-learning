@@ -150,7 +150,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
       - feature x1 = size of house
       - feature x2 = size of house squared
       - feature scaling very important with squared, etc data
- - Gradient descent [scikitxlearn SGDRegressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html)
+ - Gradient descent [scikit-learn SGDRegressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html)
  - Normal equation [scikit-learn LinearRegression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression)
     - `theta = (X.T * X)^-1 * X.T * y`
     - Doesn't need feature scaling
