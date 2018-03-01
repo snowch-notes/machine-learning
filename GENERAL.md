@@ -164,6 +164,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
              - resolution:
                 - delete some features
                 - regularization
+       - octave pinv (pseudoinverse) does the 'right thing' [scikit-learn pinv](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.linalg.pinv.html)
     
     
 ## Time series
