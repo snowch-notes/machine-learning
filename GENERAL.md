@@ -100,6 +100,8 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
    
 ## Classification
 
+ - applying linear regression to classification is often a bad idea
+
 ### KNN
 
 ```
