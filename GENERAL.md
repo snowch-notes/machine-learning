@@ -131,7 +131,9 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
    - positive/negative does not mean desirable/undesirable
 - multi-class
    - ...
-- hypothesis | 0 <=  h<sub>θ</sub>(X) <= 1
+- hypothesis
+   - 0 <=  h<sub>θ</sub>(X) <= 1
+   - h<sub>θ</sub>(X) = g(θ<sup>T</sup> X)    |    z = θ<sup>T</sup> X    |    g(z) = 1 / (1 + e<sup>-z</sup>)
 - http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
 - https://beckernick.github.io/logistic-regression-from-scratch/
 
