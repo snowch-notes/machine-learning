@@ -147,6 +147,8 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 ### Linear
 
+ - hypothesis | h<sub>θ</sub>(X) = θ<sup>T</sup> X | np.dot(theta.T,x)
+ - cost function | mean squared error | http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#cost-function
  - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
  - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
  - Can be solved using gradient descent or [normal equations](http://mlwiki.org/index.php/Normal_Equation#Normal_Equation).  Gradient descent [scales better](https://stackoverflow.com/a/18194919/1033422) to larger training sets.
