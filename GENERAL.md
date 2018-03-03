@@ -167,6 +167,9 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 - hypothesis
    - 0 <=  h<sub>θ</sub>(X) <= 1
    - h<sub>θ</sub>(X) = g(θ<sup>T</sup> X)    |    z = θ<sup>T</sup> X    |    g(z) = 1 / (1 + e<sup>-z</sup>)
+   - h<sub>θ</sub>(x)= P(y=1|x;θ) = 1−P(y=0|x;θ)   
+      - P(y=0|x;θ)+P(y=1|x;θ)=1
+   - sigmoid (aka logistic function)
 - http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
 - https://beckernick.github.io/logistic-regression-from-scratch/
 
