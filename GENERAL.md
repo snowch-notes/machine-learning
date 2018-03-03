@@ -170,6 +170,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
    - h<sub>θ</sub>(x)= P(y=1|x;θ) = 1−P(y=0|x;θ)   
       - P(y=0|x;θ)+P(y=1|x;θ)=1
    - sigmoid (aka logistic function)
+   - [cost function](http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html#cost-function)
 - http://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
 - https://beckernick.github.io/logistic-regression-from-scratch/
 
