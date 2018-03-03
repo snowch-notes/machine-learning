@@ -97,6 +97,39 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
       - to identify approximately the number of iterations to converge
          - e.g. try alpha 0.003, 0.03, 0.3, 1 and pick the next alpha down from a too large alpha
       - [scikit-learn example](https://datascience.stackexchange.com/questions/28411/how-to-plot-cost-versus-number-of-iterations-in-scikit-learn)
+      
+## Regression
+
+### Linear
+
+ - hypothesis | h<sub>θ</sub>(X) = θ<sup>T</sup> X | np.dot(theta.T,x)
+ - cost function | mean squared error | http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#cost-function
+ - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
+ - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
+ - Can be solved using gradient descent or [normal equations](http://mlwiki.org/index.php/Normal_Equation#Normal_Equation).  Gradient descent [scales better](https://stackoverflow.com/a/18194919/1033422) to larger training sets.
+ - Constructing new features worth investigating
+    - e.g. from frontage and depth, calculate plot area
+ - Polynomial regression
+    - e.g. quadratic model
+      - feature x1 = size of house
+      - feature x2 = size of house squared
+      - feature scaling very important with squared, etc data
+ - Gradient descent [scikit-learn SGDRegressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html)
+ - Normal equation [scikit-learn LinearRegression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression)
+    - `theta = (X.T * X)^-1 * X.T * y`
+    - Doesn't need feature scaling
+    - Don't need to choose 'a' learning rate
+    - Don't need to iterate
+    - Slow if lots of features (e.g. 10^6)
+    - Requires invertibility of `X.T * X`
+       - causes of non-invertibility
+          - redundant features where features are closely related (e.g. x1 = length (feet), x2 = length (metres))
+          - too many features (e.g. m <= n; m=rows, n=num features)
+             - resolution:
+                - delete some features
+                - regularization
+       - octave [pinv](https://www.gnu.org/software/octave/doc/v4.2.1/Basic-Matrix-Functions.html#index-pinv) (pseudoinverse) does the 'right thing' [scikit-learn pinv](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.linalg.pinv.html)
+    
    
 ## Classification
 
@@ -145,40 +178,6 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
   - usually outperforms random forests
   - may be the best algorithm for non-perceptual data
   - most common kaggle technique
-
-
-## Regression
-
-### Linear
-
- - hypothesis | h<sub>θ</sub>(X) = θ<sup>T</sup> X | np.dot(theta.T,x)
- - cost function | mean squared error | http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#cost-function
- - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html
- - **Outliers** least squares estimates for regression models are highly sensitive to (not robust against) outliers
- - Can be solved using gradient descent or [normal equations](http://mlwiki.org/index.php/Normal_Equation#Normal_Equation).  Gradient descent [scales better](https://stackoverflow.com/a/18194919/1033422) to larger training sets.
- - Constructing new features worth investigating
-    - e.g. from frontage and depth, calculate plot area
- - Polynomial regression
-    - e.g. quadratic model
-      - feature x1 = size of house
-      - feature x2 = size of house squared
-      - feature scaling very important with squared, etc data
- - Gradient descent [scikit-learn SGDRegressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html)
- - Normal equation [scikit-learn LinearRegression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression)
-    - `theta = (X.T * X)^-1 * X.T * y`
-    - Doesn't need feature scaling
-    - Don't need to choose 'a' learning rate
-    - Don't need to iterate
-    - Slow if lots of features (e.g. 10^6)
-    - Requires invertibility of `X.T * X`
-       - causes of non-invertibility
-          - redundant features where features are closely related (e.g. x1 = length (feet), x2 = length (metres))
-          - too many features (e.g. m <= n; m=rows, n=num features)
-             - resolution:
-                - delete some features
-                - regularization
-       - octave [pinv](https://www.gnu.org/software/octave/doc/v4.2.1/Basic-Matrix-Functions.html#index-pinv) (pseudoinverse) does the 'right thing' [scikit-learn pinv](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.linalg.pinv.html)
-    
     
 ## Time series
 
