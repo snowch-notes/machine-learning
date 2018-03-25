@@ -98,6 +98,15 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
          - e.g. try alpha 0.003, 0.03, 0.3, 1 and pick the next alpha down from a too large alpha
       - [scikit-learn example](https://datascience.stackexchange.com/questions/28411/how-to-plot-cost-versus-number-of-iterations-in-scikit-learn)
       
+## How to choose?
+
+- Perceptual -> deep learning
+- Non-perceptual:
+
+![guide for choosing ML algorithm](./images/FB184B82-A8A0-43F9-AC19-E0F1D678CC1D.png)
+
+Reference-style: 
+      
 ## Regression
 
 ### Linear
