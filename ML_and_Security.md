@@ -5,5 +5,8 @@ https://www.safaribooksonline.com/library/view/secure-because-math/9781491954850
 - anonymaly detecting difficult (impossible?)
     - host to host network paths - curse of dimensionality
     - no ground truth out of the control of the attacked (normality poisioning)
-    - hanlon's razor (aka semantic gap) - never attribute to malice that which is adequately explained by stupidity
+    - hanlon's razor (aka semantic gap) - never attribute to malice that which is adequately explained by stupidity (lot's of false positives)
+- user behavoir anaytics (ueba)
+    - e.g. someone failed password too many times or looked at too many files (however, prone to false positives)
+    - don't focus on unsupervised
     
