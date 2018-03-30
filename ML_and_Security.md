@@ -1,4 +1,4 @@
-https://www.safaribooksonline.com/library/view/secure-because-math/9781491954850/video237461.html
+https://www.safaribooksonline.com/library/view/secure-because-math/9781491954850/video237461.html (2015)
 
 - KDD dataset too old now; historic value only
 
@@ -15,4 +15,10 @@ https://www.safaribooksonline.com/library/view/secure-because-math/9781491954850
     - good sources of (paid) malicious data
     - sources of vetted non-malicious data still a challenge
     - timeliness is a big challenge, models need to be kept up to date
+    - areas
+       - malware and file have main focus
+          - file structure
+          - execution behavoir
+       - network based
+          - who machines are talking to
     
