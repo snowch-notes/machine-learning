@@ -256,5 +256,6 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 - http://scikit-learn.org/stable/modules/model_evaluation.html
 - http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics
+- https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
 
 
