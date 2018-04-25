@@ -62,7 +62,7 @@ data.groupBy(['Survived'])['cabin_null'].mean() # Percentage of survivors by whe
     - https://en.m.wikipedia.org/wiki/Loss_function
     - Linear - http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#cost-function
  - **Objective Function** is either a loss function or its negative (in specific domains, variously called a reward function, a profit function, a utility function, a fitness function, etc.), in which case it is to be maximized.
- - **Gradient Descent** is a first-order iterative optimization algorithm for finding the minimum of a function (minimise the cost). To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or of the approximate gradient) of the function at the current point.  https://en.m.wikipedia.org/wiki/Gradient_descent
+ - **Gradient Descent** is a first-order iterative optimization algorithm for finding the minimum of a function (minimise the cost). To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or of the approximate gradient) of the function at the current point.  https://en.m.wikipedia.org/wiki/Gradient_descent http://ruder.io/optimizing-gradient-descent/
  - **L1 and L2 regularization** ([Source](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when))
     -  L1 regularization helps perform feature selection in sparse feature spaces, and that is a good practical reason to use L1 in some situations.
     - As a rule-of-thumb, you should always go for L2 in practice.
