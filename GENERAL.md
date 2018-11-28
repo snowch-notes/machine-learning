@@ -262,7 +262,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
 
 Source: https://en.wikipedia.org/wiki/Precision_and_recall#Definition_(classification_context))
 
-![AOC ROC](images/E01BB399-5A8F-4C7F-A67F-3832E577E13D.png
+![AOC ROC](images/E01BB399-5A8F-4C7F-A67F-3832E577E13D.png)
 
 Source: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
