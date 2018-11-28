@@ -240,6 +240,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
        - model assumptions - usually visual inspection for patterns (difficult to test)
           - cross validation and loads of tests?
     - Classification:
+       - See diagram below
        - [Accuracy, Precision, Recall or F1?](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
        - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
           - Area under curve (AUC) [scikit learn example](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
@@ -254,6 +255,10 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
     - Profitability
     - Risk
  - Random baseline
+ 
+## Classification metrics
+
+![Classification Metrics](images/classification_metrics.png)
 
 ## SciKit Learn - Model Evaluation
 
