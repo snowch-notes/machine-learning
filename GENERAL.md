@@ -239,7 +239,8 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
        - (adjusted)[R<sup>2</sup>](https://en.m.wikipedia.org/wiki/Coefficient_of_determination)
        - model assumptions - usually visual inspection for patterns (difficult to test)
           - cross validation and loads of tests?
-    - Classification: 
+    - Classification:
+       - [Accuracy, Precision, Recall or F1?](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
        - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
           - Area under curve (AUC) [scikit learn example](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
           - Location of inflection point
