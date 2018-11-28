@@ -266,6 +266,10 @@ Source: https://en.wikipedia.org/wiki/Precision_and_recall#Definition_(classific
 
 Source: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
+Plotted by calculating the TPR and FPR at different thresholds (threshold = decision boundary?). 
+
+Threshholds can be selected decided during training (e.g. azure ml) and are a business decision (e.g. for fraud detection low threshold resukting in more false positives may be desirable).
+
 ## SciKit Learn - Model Evaluation
 
 - http://scikit-learn.org/stable/modules/model_evaluation.html
