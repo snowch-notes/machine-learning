@@ -242,7 +242,9 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
     - Classification:
        - [See Classification Metrics](#classification-metrics)
        - [Accuracy, Precision, Recall or F1?](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
-       - [ROC curve](https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic)
+       - [ROC curve]
+          - https://people.inf.elte.hu/kiss/13dwhdm/roc.pdf
+          - https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic
           - Area under curve (AUC) [scikit learn example](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
           - Location of inflection point
           - % of data correctly classified
@@ -265,10 +267,6 @@ Source: https://en.wikipedia.org/wiki/Precision_and_recall#Definition_(classific
 ![AOC ROC](images/E01BB399-5A8F-4C7F-A67F-3832E577E13D.png)
 
 Source: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
-
-Plotted by calculating the TPR and FPR at different thresholds (threshold = decision boundary?). 
-
-Threshholds can be selected decided during training (e.g. azure ml) and are a business decision (e.g. for fraud detection low threshold resukting in more false positives may be desirable).
 
 ## SciKit Learn - Model Evaluation
 
