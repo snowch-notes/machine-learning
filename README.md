@@ -243,7 +243,7 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
        - [See Classification Metrics](#classification-metrics)
        - [Accuracy, Precision, Recall or F1?](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
        - [ROC curve]
-          - https://people.inf.elte.hu/kiss/13dwhdm/roc.pdf [notebook](./TomFawcett_An_introduction_to_ROC_analysis.ipynb)
+          - [An_introduction_to_ROC_analysis](https://people.inf.elte.hu/kiss/13dwhdm/roc.pdf) ([notebook](./TomFawcett_An_introduction_to_ROC_analysis.ipynb))
           - https://en.m.wikipedia.org/wiki/Receiver_operating_characteristic
           - Area under curve (AUC) [scikit learn example](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
           - Location of inflection point
