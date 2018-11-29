@@ -249,6 +249,10 @@ print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
           - Location of inflection point
           - % of data correctly classified
           - can you plot +/- revenue or whatever-y value vs false negatives/positives?
+       - Azure ML
+         - Part 1: [Performance measures in Azure ML](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/09/performance-measures-in-azure-ml-accuracy-precision-recall-and-f1-score/)
+         - Part 2: [ROC plots and the AUC measure](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/09/using-roc-plots-and-the-auc-measure-in-azure-ml/)
+         - Part 3: [Setting the threshold of a binary learning model](https://blogs.msdn.microsoft.com/andreasderuiter/2015/02/10/setting-the-threshold-of-a-binary-learning-model-in-azure-ml/)
        - [Confusion matrix](https://en.m.wikipedia.org/wiki/Confusion_matrix)
        - Typically use cross-validation
     - Clustering
